@@ -34,9 +34,10 @@ SQL was written to query a DB2 database in SAIL Project 1658. R scripts were wri
   * 2.02_ons_demographics.R: Demographic analysis of general adult popultaion in LAs of interest. Produces counts, percentages and plots by sex, age group, deprivation and rurality, using ONS mid-2022 population estimates.
 
 - Section 3: LTC (long-term conditions)
-  * 3.01_ltc.sql: Extracts long-term conditions from WLGP.
-  * 3.02_ltc.R: Combines long-term conditions data extract with  Bridgend cohort data. Adapted from code written by Dr Will Parry, sourced from HFAnalyticsLab GitHub. Original code: https://github.com/HFAnalyticsLab/CMD_multimorbidity/blob/master/R/03_Create_Cambridge_Score.R
-  * 3.03_ltc_analysis.R: Analysis of long-term conditions (multimorbidity and most common conditions) in reablement/matched populations.
+  * 3.01_ltc_codelist.R: Creates Read code lookup for long-term conditions from Cambridge Primary Care Unit and Hanlon et. al. (2022). Adapted from code written by Dr Will Parry, sourced from HFAnalyticsLab GitHub. Original code: https://github.com/HFAnalyticsLab/CMD_multimorbidity/blob/master/R/02_Create_CamCodeList.R
+  * 3.02_ltc.sql: Extracts long-term conditions from WLGP.
+  * 3.03_ltc.R: Combines long-term conditions data extract with  Bridgend cohort data. Adapted from code written by Dr Will Parry, sourced from HFAnalyticsLab GitHub. Original code: https://github.com/HFAnalyticsLab/CMD_multimorbidity/blob/master/R/03_Create_Cambridge_Score.R
+  * 3.04_ltc_analysis.R: Analysis of long-term conditions (multimorbidity and most common conditions) in reablement/matched populations.
 
 - Section 4: Referral Source
   * 4.01_referrals.R: Provide descriptive analysis and accompanying plots on the types of referral sources in each local authority.
